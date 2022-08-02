@@ -1,0 +1,28 @@
+.btn-config-general {
+  background: #31c3f5;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
+.btn-config-general a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+#btn-start button {
+  background: #31c3f5;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  animation: pulse;
+  animation-duration: 2s;
+  width: 200px;
+}
+#btn-start button a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}

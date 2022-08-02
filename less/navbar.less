@@ -1,0 +1,219 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container__all{
+    position: relative;
+    transition: all 300ms;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    transition: all 300ms;
+}
+
+
+.move_content{
+    right: 180px;
+}
+
+.container__header{
+    height: 100%;  
+    display: flex;
+    justify-content: space-between; 
+    margin: auto;
+}
+
+.logo img{
+    padding-top: 20px;
+    width: 60px;
+    transition: 1s;
+}
+
+.container__nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    body.dark &{
+        color: rgb(255, 255, 255);
+    }
+}
+nav ul li a:hover{
+    color: #ffffff;
+    transition: .5s;
+    font-size: 20px;
+    body.dark &{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.select{
+    background: #359EF9;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+/*aca se colocan las modificaciones de cuando la pagina avanza 20px en el scroll*/
+.nav_mod{
+ height: 100px;
+ width: 100%;
+ background-color: white;
+
+ body.dark &{
+    background-color:rgb(1, 1, 49);
+    transition: 1s;
+}
+
+ .btn__menu{
+    animation: bounce;
+    animation-duration: 2s;
+    color: rgb(0, 0, 0);
+    
+}
+
+.btn__menu:hover{
+    background: #1a1a1aaf;
+}
+
+ nav ul li a{
+    color: #3a3a3a;
+    font-size: 14px;
+    text-decoration: none;
+    body.dark &{
+        color: rgb(255, 255, 255);
+    }
+}
+nav ul li a:hover{
+    color:#3a3a3a;;
+    transition: .5s;
+    font-size: 20px;
+    body.dark &{
+        color: rgb(255, 255, 255);
+    }
+} 
+.logo img{
+    padding-top: 20px;
+    width:45px;
+    animation: pulse;
+    animation-duration: 2s
+}
+}
+
+.btn__menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 2s;
+    display: none;
+    color: white;
+    animation: bounce;
+    animation-duration: 2s;
+    body.dark &{
+        color: white;
+        transition: 2s;
+    }
+}
+
+.btn__menu:hover{
+    background: #1a1a1aaf;
+}
+
+
+@media screen and (max-width: 740px){
+    
+    .container__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__menu{
+        display: flex;
+       
+    }
+
+    nav{
+        height: 100%;
+        background: #28ff0d;
+        position: fixed;
+        top: 0;
+        right: -210px;
+        transition: all 300ms;
+        body.dark &{
+            background-color: #00c3ff;
+        }
+    }
+
+    .move_nav{
+        right: 0px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul button{
+        align-items: center;
+    }
+
+    nav ul li{
+        margin: 20px 20px;
+    }
+
+    .container__vector img{
+        transform: scale(0);
+        animation: none;
+    }
+   
+    nav ul li a{
+        color: #3b3b3b;
+        font-size: 14px;
+        text-decoration: none;
+        body.dark &{
+            color: rgb(77, 77, 77);
+        }
+    }
+    nav ul li a:hover{
+        color: #ffffff;
+        body.dark &{
+            color: rgb(77, 77, 77);
+        }
+    }
+}
+

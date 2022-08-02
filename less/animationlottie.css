@@ -1,0 +1,13 @@
+.lottie h1 {
+  color: #616161;
+  font-size: 50px;
+  padding-left: 325px;
+}
+.success {
+  position: absolute;
+  bottom: 0;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+}

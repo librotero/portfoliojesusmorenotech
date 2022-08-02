@@ -1,0 +1,24 @@
+footer {
+  background: rgba(255, 255, 255, 0);
+}
+footer.dark {
+  background: #010131;
+}
+.footer a {
+  color: #292727;
+  margin: 15px;
+  font-size: 25px;
+}
+body.dark .footer a {
+  color: #ffffff;
+  transition: 2s;
+}
+.footer a:hover {
+  color: #28ff0d;
+  margin: 15px;
+  font-size: 25px;
+  transition: 2s;
+}
+body.dark .footer a:hover {
+  color: #ff1abf;
+}

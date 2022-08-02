@@ -1,0 +1,84 @@
+
+.centrado{
+    position: absolute;
+    bottom: 0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+
+.parrallax{
+ width: 100%;
+ height: 850px;
+ background-size: cover;
+ display: flex;
+background-image: url("https://fondosmil.com/fondo/36779.jpg");
+background-attachment: fixed;
+transition: 2s;
+body.dark &{
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-azul-marino-textura-oscura_156943-510.jpg");
+    background-attachment: fixed; 
+    transition: 2s; 
+}
+@media screen and(max-width: 720px){
+    body.dark &{
+        background-image: url("https://img.freepik.com/vector-gratis/fondo-azul-marino-textura-oscura_156943-510.jpg");
+        background-attachment: fixed;  
+
+    }
+};
+}
+
+
+/*button init*/
+.arrow ion-icon{
+    color: #fff;
+    font-size:100px;
+    position: absolute;
+    bottom: 0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*button init*/
+
+@media screen and (max-width: 720px){
+    .parrallax{
+        width: 100%;
+        height: 900px;
+       background-image: url("https://img.freepik.com/vector-gratis/fondo-azul-marino-textura-oscura_156943-510.jpg");
+       background-attachment: fixed;
+       transition: 1s;
+       }
+       
+    .centrado h1{
+        font-size: 80px;
+    }
+    .centrado{
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+    }
+    
+}
+
+.scrollarrow ion-icon{
+    font-size:80px;
+    color: navy;
+    cursor: pointer;
+    animation: bounce;
+    animation-duration: 2s;
+    --animate-repeat: 2;
+}
+
+.scrollarrow ion-icon:hover{
+    font-size:80px;
+    color: rgb(52, 52, 243);
+    cursor: pointer;
+}

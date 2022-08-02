@@ -1,0 +1,16 @@
+.btn-config-general {
+  background: #26beef;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
+.btn-config-general a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.btn-config-general:hover {
+  background: linear-gradient(to bottom, #26beef, #65e6ff);
+  transition: 2s;
+}

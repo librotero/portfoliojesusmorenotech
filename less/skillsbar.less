@@ -1,0 +1,109 @@
+@color-bar-skills: #00c3ff;
+@color-border-barra: #00c3ff;
+
+container{
+    border-radius: 5px;
+}
+
+.main{
+    
+    border: solid 1px #00c3ff;
+    padding: 50px;
+    padding-bottom:50px;
+    border-radius: 15px;
+    body.dark &{
+        transition: 2s;
+        border: solid 1px #28ff0d;
+    }
+    
+    }
+    .main p{
+    color: grey;
+    padding-bottom: .2vw;
+    padding-top: .2vw;
+
+    }
+.skills{
+    text-align:right;
+    padding-right:10px;
+    color: rgb(0, 0, 0);
+    border-radius:2.5px;
+    font-size:10px;
+    margin-bottom: 1vw;
+}
+.html{
+    background-color: @color-bar-skills;
+    animation: fillhtml 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.css{background-color: @color-bar-skills;
+    animation: fillcss 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.bootstrap{background-color: @color-bar-skills;
+    animation: fillbootstrap 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.java{background-color: @color-bar-skills;
+    animation: filljava 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.javascript{background-color: @color-bar-skills;
+    animation: filljavascript 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.mongodb{background-color: @color-bar-skills;
+    animation: fillmongodb 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+.sql{background-color: @color-bar-skills;
+    animation: fillsql 2s forwards;
+    body.dark &{
+        background-color:#28ff0d;
+        transition:2s;
+    }
+}
+
+@keyframes fillhtml{
+0%{width:0;}
+100%{width:90%}
+}
+
+@keyframes fillcss{
+    0%{width:0;}
+    100%{width:80%}
+}
+@keyframes filljava{
+    0%{width:0;}
+    100%{width:75%}
+}
+@keyframes filljavascript{
+    0%{width:0;}
+    100%{width:70%}
+}
+@keyframes fillsql{
+    0%{width:0;}
+    100%{width:80%}
+}
+@keyframes fillmongodb{
+    0%{width:0;}
+    100%{width:50%}
+}

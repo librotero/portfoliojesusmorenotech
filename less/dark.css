@@ -1,0 +1,7 @@
+body {
+  background: white;
+  transition: 3s ease all;
+}
+body.dark {
+  background: #010131;
+}
